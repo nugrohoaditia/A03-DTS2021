@@ -4,4 +4,324 @@
 body{
     background-color: white;
     color: black;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ============ Body (Contact Us) ============ */
+#body2{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    color: #474747;
+}
+
+#body2 .container{
+    display: flex;
+    position: relative;
+    padding: 0 5px;
+}
+
+#body2 .wrapper-body2{
+    display: block;
+    position: relative;
+    padding: 30px 40px;
+}
+
+
+/* Contact Us Left */
+#body2 .wrapper-body2.left{
+    background-color: #beb58b;
+    width: 25%;
+    border-radius: 15px;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.body2-info-wrapper{
+    z-index: 1;
+    display: block;
+    position: relative;
+}
+
+#body2 .info-wrapper{
+    margin: 50% 0;
+}
+
+.info-wrapper .info-item{
+    font-size: 18px;
+    cursor: pointer;
+    transition: color .8s ease;
+}
+
+.info-item + .info-item{
+    margin-top: 45px;
+}
+
+.info-wrapper .info-item span{
+    margin-right: 15px;
+    color: #837431;
+    transition: color .8s ease;
+}
+
+.info-item:hover{
+    color: #837431;
+}
+.info-item:hover span{
+    color: whitesmoke;
+}
+
+.sosmed-wrapper{
+    display: block;
+    position: relative;
+}
+
+.sosmed-wrapper a{
+    display: inline-block;
+    position: relative;
+}
+
+.sosmed-item{
+    width: 27px;
+    height: 27px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .8s ease;
+}
+
+.sosmed-item:hover{
+    background-color: #837431;
+}
+
+.sosmed-item span:before{
+    vertical-align: middle;
+}
+
+.sosmed-item + .sosmed-item{
+    margin-left: 15px;
+}
+
+.info-bubble{
+    display: block;
+    position: absolute;
+    background-color: #837431;
+    border-radius: 500px;
+}
+
+.info-bubble.bubble1{
+    width: 300px;
+    height: 300px;
+    right: 0px;
+    bottom: -100px;
+    animation: body2-bubble1 7s infinite;
+}
+
+.info-bubble.bubble2{
+    background-color: #bba958;
+    width: 250px;
+    height: 250px;
+    right: 450px;
+    bottom: -100px;
+    animation: body2-bubble2 6s infinite 2s;
+}
+
+.info-bubble.bubble3{
+    background-color: #cebc6d;
+    width: 250px;
+    height: 250px;
+    right: -50px;
+    bottom: -250px;
+    animation: body2-bubble3 8s infinite 3s;
+}
+
+.info-bubble.bubble4{
+    background-color: #b4a563;
+    width: 200px;
+    height: 200px;
+    left: -50px;
+    bottom: -200px;
+    animation: body2-bubble4 4s infinite 4s;
+}
+
+
+/* Contact Us Right */
+#body2 .wrapper-body2.right{
+    width: 75%;
+    border-radius: 5px;
+    color: #474747;
+    overflow: hidden;
+}
+
+
+#body2 .body2-form-wrapper{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#body2 .form-wrapper-row{
+    display: flex;
+    position: relative;
+}
+
+.form-wrapper-row + .form-wrapper-row{
+    margin-top: 5em;
+}
+
+.form-wrapper-row .form-wrapper{
+    width: 50%;
+    position: relative;
+}
+
+.form-wrapper + .form-wrapper{
+    margin-left: 30px;
+}
+
+.form-wrapper-row .form-wrapper.form-area{
+    width: 100%;
+}
+
+.form-wrapper-row .form-wrapper.form-button{
+    width: 100%;
+}
+
+.form-wrapper .label-form{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #474747d3;
+    letter-spacing: 1.5px;
+}
+
+.form-wrapper .input-form{
+    display: block;
+    position: relative;
+    left: 0;
+    top: 25px;
+    font-size: 18px;
+    color: #474747;
+    letter-spacing: .5px;
+    border: none;
+    border-bottom: 1px solid #424242;
+    width: 100%;
+    padding: 15px 0;
+}
+
+
+.form-wrapper textarea{
+    resize: none;
+}
+
+.form-wrapper .btn-input{
+    background-color: #837431;
+    color: beige;
+    border: none;
+    padding: 20px;
+    font-size: 14px;
+    float: right;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.form-wrapper .btn-input:hover{
+    background-color: beige;
+    color: #837431;
+}
+
+
+/* Media Query - Responsif */
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    #body2 .wrapper-body2 {
+        padding: 15px 20px;
+    }
+
+    #body2 .body2-info-wrapper h2{
+        font-size: 20px;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    #body2 .wrapper-body2 {
+        padding: 15px 20px;
+    }
+
+    #body2 .body2-info-wrapper h2{
+        font-size: 20px;
+    }
+}
+
+
+/* Animation Keyframe */
+@keyframes body2-bubble1 {
+    from {
+        bottom: -300px;
+        opacity: .3;
+    }
+    to {
+        bottom: 550px;
+        opacity: .0;
+        width: 70px;
+        height: 70px;
+        right: 150px;
+    }
+}
+@keyframes body2-bubble2 {
+    from {
+        bottom: -50px;
+        opacity: .7;
+    }
+    to {
+        bottom: 550px;
+        opacity: .0;
+        width: 10px;
+        height: 10px;
+        right: 150px;
+    }
+}
+@keyframes body2-bubble3 {
+    from {
+        opacity: .9;
+    }
+    to {
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        right: 150px;
+        bottom: 750px;
+    }
+}
+@keyframes body2-bubble4 {
+    from {
+        opacity: .9;
+    }
+    to {
+        opacity: 0;
+        width: 10px;
+        height: 10px;
+        left: 250px;
+        bottom: 750px;
+    }
+}
+/* ============ Body (Contact Us) ============ */
