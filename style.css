@@ -44,7 +44,7 @@ a:active{
 
 /* Contact Us Left */
 #body2 .wrapper-body2.left{
-    background-color: #beb58b;
+    background-color: #beb8a1;
     width: 25%;
     border-radius: 15px;
     color: whitesmoke;
@@ -223,8 +223,25 @@ a:active{
     border-bottom: 1px solid #424242;
     width: 100%;
     padding: 15px 0;
+    transition: all 1s ease .2s;
 }
 
+.input-form::placeholder {
+    color: #6b6b62; 
+    opacity: .2; 
+}
+  
+.input-form::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #6b6b62; 
+}
+  
+.input-form::-ms-input-placeholder { /* Microsoft Edge */
+    color: #6b6b62; 
+}
+
+.input-form:focus{
+    background-color: rgba(245, 245, 220, .4);
+}
 
 .form-wrapper textarea{
     resize: none;
@@ -259,17 +276,96 @@ a:active{
     #body2 .body2-info-wrapper h2{
         font-size: 20px;
     }
+
+    #body2 .body2-info-wrapper p{
+        font-size: 15px;
+    }
+
+    #body2 .sosmed-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    #body2 .info-wrapper {
+        margin: 60% 0;
+    }
+
+    .sosmed-item + .sosmed-item {
+        margin-left: 1px;
+    }
+
+    #body2 .body2-form-wrapper {
+        padding: 0;
+    }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+    #body2 .container {
+        display: block;
+    }
+    
+    #body2 .wrapper-body2.left, #body2 .wrapper-body2.right {
+        width: 85%;
+    }
+
     #body2 .wrapper-body2 {
         padding: 15px 20px;
     }
 
     #body2 .body2-info-wrapper h2{
-        font-size: 20px;
+        font-size: 18px;
     }
+
+    #body2 .body2-info-wrapper p{
+        font-size: 13px;
+    }
+
+
+    #body2 .info-wrapper {
+        margin: 10% 0;
+    }
+
+    .info-item + .info-item {
+        margin-top: 18px;
+    }
+
+    #body2 .form-wrapper-row {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .form-wrapper-row +.form-wrapper-row{
+        margin-top: 80px;
+    }
+
+    .form-wrapper-row .form-wrapper {
+        width: 100%;
+    }
+
+    .form-wrapper + .form-wrapper {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .form-wrapper .label-form {
+        font-size: 12px;
+    }
+
+    .form-wrapper .input-form {
+        font-size: 12px;
+    }
+
+    .form-wrapper.form-button {
+        text-align: center;
+    }
+
+    .form-wrapper .btn-input {
+        font-size: 12px;
+        float: none;
+        width: 85%;
+    }
+    
 }
 
 
