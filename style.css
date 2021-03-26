@@ -1,5 +1,7 @@
 *{
-    background-color: blue;
-    color: white;
-    text-align: center;
+    font-family: Tahoma, sans-serif;
+}
+body{
+    background-color: white;
+    color: black;
 }
