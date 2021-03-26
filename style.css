@@ -329,18 +329,17 @@ a:active{
 /* muammar menambah lokasi */
 .lokasi{
 
-    height: 420px;
+    height: 100%;
     text-align: center;
    
     background-color:#f8f9fa!important;
-    width: auto;
-    border-radius: 15px;
+    width: 100%;
+    
     color: whitesmoke;
 
     background-image: url('assets/map.gif');
     background-size:cover;
     color: white;
-    text-align: center;
     margin-top: 10px;
 
 }
@@ -355,14 +354,8 @@ a:active{
     color: whitesmoke;
     padding-bottom: 5px;
 }
-.peta{
-border-radius: 50%;
-    float: right;
-    padding-right: 20px;
-}
-.peta img{
-    border-radius: 10%;
-}
+
+
 .footer{
     margin-top: 20px;
     text-align: center;
