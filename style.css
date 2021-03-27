@@ -19,6 +19,77 @@ a:active{
     color: inherit;
 }
 
+/* ============ Menu Start ============ */
+#menu {
+	background-color: #999;
+	padding: 80px 0;
+}
+#menu .container {
+    width: 80%;
+    margin: 0 auto;
+}
+#menu h2 {
+    font-size: 2rem;
+}
+.menu-desc {
+    font-size: 1.25rem;
+    margin-bottom: 60px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-tiles {
+    width: 30%;
+    height: 250px;
+    width: 30%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+.menu-tiles:hover .menu-item{
+    transform: scale(1.3);
+    transition: all .5s;
+}
+.menu-tiles:hover a{
+    display: block; 
+}
+.menu-tiles a {
+	display: none;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-item {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+.bg-drink {background-image: url(assets/drinks.jpg);}
+.bg-food {background-image: url(assets/foods.jpg);}
+.bg-special {background-image: url(assets/special.jpg);}
+
+/* ============ Menu End ============ */
 
 /* ============ Body (Contact Us) ============ */
 #body2{
@@ -297,6 +368,22 @@ a:active{
     #body2 .body2-form-wrapper {
         padding: 0;
     }
+    
+    /* ===== Menu ===== */
+    #menu{
+        padding: 60px 0;
+    }
+
+    .menu-tiles {
+        width: 48%;
+        margin: 10px 0px;
+    }
+    .menu-tiles:last-child{
+        width: 100%;
+    }
+    .menu-wrapper {
+        padding: 10px;
+    }
 }
 
 /* Untuk Smartphone */
@@ -364,6 +451,25 @@ a:active{
         font-size: 12px;
         float: none;
         width: 85%;
+    }
+    
+    /* ===== Menu ===== */
+    #menu{
+        padding: 40px 0;
+    }
+    #menu h2{
+        font-size: 1.5rem;
+    }
+    .menu-desc{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .menu-tiles {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .menu-wrapper {
+        padding: 10px;
     }
     
 }
