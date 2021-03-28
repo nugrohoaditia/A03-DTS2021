@@ -1,5 +1,55 @@
-*{
-    background-color: blue;
-    color: white;
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.main {
+	display: 
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.about-wrapper {
+	background-color: #E9DCCD;
+	padding-bottom: 40px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.about-wrapper p {
+	font-size: 20px;
+	text-align: justify;
+	padding-bottom: 10px;
+	
+}
+
+.title-about {
+	padding-top: 60px;
+	padding-bottom: 5px;
+}
+
+.product {
+	width: 25%;
+	float: left;
+	padding-right: 2%;
+	display: block;
+	
+}
+	
