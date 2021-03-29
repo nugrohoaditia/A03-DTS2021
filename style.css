@@ -20,6 +20,10 @@ a:active{
     color: inherit;
 }
 
+li {
+    list-style: none;
+}
+
 /* ============ Menu Start ============ */
 #menu {
 	background-color: #999;
@@ -92,7 +96,121 @@ a:active{
 
 /* ============ Menu End ============ */
 
+/* =========== Nav & Header =========== */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    color: rgb(228, 228, 228);
+    padding: 20px 80px;
+    background-color: rgba(245, 236, 157, 0.5);
+}
 
+nav .menu{
+    float: right;
+}
+
+nav ul{
+    display: inline-flex;
+}
+
+nav ul li{
+    margin-left: 60px;
+    background-color: rgb(107, 109, 79);
+    padding: 6px;
+    color: #ececec;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+nav ul li:hover{
+    color: rgb(107, 109, 79);
+    border-radius: 7px;
+    background-color: #ececec;
+
+}
+
+.mobile-menu{
+    display: none;
+    float: right;
+    cursor: pointer;
+    border: 1px solid silver;
+    padding: 6px;
+    border-radius: 5px;
+    color: #ececec;
+    background-color: rgb(107, 109, 79);
+    text-align: center;
+}
+
+.mobile-menu span{
+    font-size: 19px;
+}
+
+.nav-logo {
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 20px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(65, 65, 65, 0.664);
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+header .header-wrapper{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: rgba(44, 44, 44, 0.4);
+}
+
+header .img-header{
+    background-image: url(img/drinks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50%;
+}
+
+header .heading{
+    display: block;
+    width: 30%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .heading h1{
+    font-size: 45px;
+}
+
+header .heading p{
+    font-size: 19px;
+}
+
+.bg-header{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(44, 44, 44, 0.4);
+}
+
+/* =========== Nav & Header =========== */
 
 /* ============ Main (About) ============ */
 
@@ -104,7 +222,7 @@ a:active{
 
 #main .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 40px 15px;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -400,10 +518,8 @@ a:active{
 
 /* muammar menambah lokasi */
 
-.jadwal{
+#jadwal{
     text-align: center;
-    padding:auto;
-    margin-top: 20px;
     background-color:#dc3545!important;
     width: auto;
     border-radius: 15px;
@@ -438,13 +554,10 @@ a:active{
 
 
 .footer{
-    margin-top: 20px;
     text-align: center;
     padding:10px;
-    
     background-color:#007bff!important;
-
-    border-radius: 15px;
+    border-radius: 5px;
     color:whitesmoke;
     font-size: 20px;
     
@@ -511,6 +624,40 @@ a:active{
 /* Media Query - Responsif */
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+
+    nav{
+        padding: 10px 30px;
+    }
+    
+    
+    nav ul li{
+        margin-left: 20px;
+        padding: 3px;
+        font-size: 14px;
+    }
+    
+    .nav-logo {
+        font-size: 25px;
+        letter-spacing: 15px;
+    }
+    
+    header .img-header{
+        padding-bottom: 70%;
+    }
+    
+    header .heading{
+        width: 50%;
+    }
+    
+    header .heading h1{
+        font-size: 40px;
+    }
+    
+    header .heading p{
+        font-size: 18px;
+    }
+    
+
     #body2 .wrapper-body2 {
         padding: 15px 20px;
     }
@@ -591,6 +738,41 @@ a:active{
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
+
+    nav{
+        padding: 15px 8px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+    
+    header .img-header{
+        padding-bottom: 100%;
+    }
+    
+    header .heading{
+        width: 70%;
+    }
+    
+    header .heading h1{
+        font-size: 30px;
+    }
+    
+    header .heading p{
+        font-size: 15px;
+    }
+
     #body2 .container {
         display: block;
     }
@@ -698,7 +880,7 @@ a:active{
 
     /* LOCATION N FOOTER */
 
-    .jadwal{
+    #jadwal{
         display: block;
         padding: 60px 0;
         width: 100%;
